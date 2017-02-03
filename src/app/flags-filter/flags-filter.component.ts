@@ -3,7 +3,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'flag-filter',
-  templateUrl: './flags-filter.component.html'
+  templateUrl: './flags-filter.component.html',
+  styleUrls: ['./flag-filter.component.css']
 })
 
 export class FlagFilterComponent {

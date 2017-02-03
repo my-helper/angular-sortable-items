@@ -16,12 +16,16 @@ import '../styles/styles.css';
 export class AppComponent implements OnInit {
   cities: Item[];
   companies: Item[];
-  sortOrder = true;
+  sortOrder: boolean;
   selectedItemG: Item;
-  selectedProps: any[] = [];
-  text = '';
+  selectedProps: any[];
+  text: string;
 
-  constructor(private citiesService: CitiesService) { }
+  constructor(private citiesService: CitiesService) {
+    this.sortOrder = true;
+    this.selectedProps = [];
+    this.text = '';
+  }
 
   getCities(): void {
     this.citiesService.getCities().then(cities => this.cities = cities);
