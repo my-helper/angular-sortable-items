@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CitiesService } from './city.service';
 
 import { Item } from './item';
@@ -13,7 +13,7 @@ import '../styles/styles.css';
   providers: [CitiesService]
 })
 
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   cities: Item[];
   companies: Item[];
   sortOrder = true;
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit{
     this.citiesService.getCompanies().then(companies => this.companies = companies);
   }
 
-  ngOnInit(): void{
+  ngOnInit(): void {
     this.getCities();
     this.getCompanies();
   }
