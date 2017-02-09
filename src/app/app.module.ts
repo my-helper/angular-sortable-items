@@ -9,7 +9,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 
 import { AppComponent } from './app.component';
 import { ItemListComponent } from './item-list/item-list.component';
-import { ItemSelectedComponent } from './item-detail/item-detail.component';
+// import { ItemSelectedComponent } from './item-detail/item-detail.component';
 import { FlagFilterComponent } from './flags-filter/flags-filter.component';
 import { TextFilterComponent } from './text-filter/text-filter.component';
 
@@ -27,7 +27,7 @@ import { TextFilterPipe } from './text-filter/text-filter.pipe';
   declarations: [
     AppComponent,
     ItemListComponent,
-    ItemSelectedComponent,
+    // ItemSelectedComponent,
     FlagFilterComponent,
     TextFilterComponent,
     AlphabeticalOrderPipe,
